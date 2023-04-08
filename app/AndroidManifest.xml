@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="ExtraText">
+        <activity android:name=".ShortWeatherActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCenlsxhLu5qPUN6HafUMP74cDFmjWHxZU" />
+
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tomntoms_list" />
+        <activity android:name=".twosome_list" />
+        <activity android:name=".starbucks_list" />
+        <activity android:name=".hollys_list" />
+        <activity android:name=".resultNoPage" />
+        <activity android:name=".resultPage" />
+        <activity android:name=".mainPage" />
+        <activity android:name=".tasteTesting" />
+        <activity android:name=".selectCafe" />
+        <activity android:name=".startPage" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
